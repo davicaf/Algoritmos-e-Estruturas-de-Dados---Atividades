@@ -43,7 +43,7 @@ int main() {
         int flagfimdejogo = 0; // Controle do fim do jogo
         while(!flagfimdejogo) { // Loop do jogo até que o jogo termine
             int i, j; // Variáveis que serão lidas pelo jogador para as coordenadas
-            printf("Digite uma coordenada X e Y\n[linha] [coluna]\n");
+            printf("Digite uma coordenada X e Y no formato\n[linha],[coluna]\n");
             scanf("%d%*[,.]%d", &i, &j); //ignorar a , e .
 
             // Garante que a coordenada comece em 1 e vá até o tamanho do tabuleiro
@@ -66,7 +66,7 @@ int main() {
 
             }
             else {
-                printf("Entrada Inválida\nO valor deve estar entre 1 e %d\n", tamanhotabuleiro); // Mensagem de valor fora do tamanho do tabuleiro
+                printf("Entrada Inválida\nO valor deve estar entre 1 e %d e a entrada deve ser no formato [linha],[coluna\n", tamanhotabuleiro); // Mensagem de valor fora do tamanho do tabuleiro
             }
         }
         // Salvar e fechar o log
