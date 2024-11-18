@@ -1,2 +1,1 @@
-Repositório onde armazeno todos os meus feitos na matéria de Algoritmos e Estruturas de Dados - 2024/2
-
+As atividades estão organizadas em pastas para a melhor busca.
