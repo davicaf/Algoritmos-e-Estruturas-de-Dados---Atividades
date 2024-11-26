@@ -37,6 +37,10 @@ int **criador_matriz(int tamanhotabuleiro) { // Função para criar uma matriz a
     int **tempmatriz = malloc(tamanhotabuleiro * sizeof(int *)); // Alocação dinâmica de memória de uma matriz de ponteiros
     for(int cont = 0; cont < tamanhotabuleiro; cont++) { //Alocação dinâmica de memória para cada linha da matriz
         tempmatriz[cont] = malloc(tamanhotabuleiro * sizeof(int));
+       if(tempmatriz == NULL){
+        printf("ERRO AO CRIAR MATRIZ\n");
+        exit(1);
+    }
     }
     if(tempmatriz == NULL){
         printf("ERRO AO CRIAR MATRIZ\n");
